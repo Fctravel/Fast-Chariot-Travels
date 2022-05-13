@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Fast Chariot Travels</title>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,700" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="dummy/logo1.png">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body class="slider-collapse">
+		
+		<div id="site-content">
+			
+			<header class="site-header wow fadeInDown">
+				<div class="container">
+					<div class="header-content">
+						<div class="branding">
+							<img src="dummy/logo1.png" alt="Company Name" class="logo" style="width: 30%;">
+							<h1 class="site-title"><a href="index.html">Fast Chariot Travels</a></h1>
+							<small class="site-description">Flight Booking</small>
+						</div>
+						
+						<nav class="main-navigation">
+							<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+							<ul class="menu">
+								<li class="menu-item"><a href="about-us.html">About us</a></li>		
+								<li class="menu-item"><a href="our-offer.html">Our Offer</a></li>
+								<li class="menu-item"><a href="customer-protection.html">Customer Protection</a></li>
+								<li class="menu-item"><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						
+						<div class="social-links">
+							<a href="https://www.facebook.com/FastChariot" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+				</div>
+			</header> <!-- .site-header -->
+
+			<main class="content">
+				<div class="slider">
+
+					<ul class="slides">
+						<li data-background="images/banner1.jpg">
+							<div class="container">
+								<div class="slide-caption col-md-4">
+									<h2 class="slide-title">GET IN TOUCH!</h2>
+									<p>Get in touch with us through any of our offices around Nigeria and parts of West Africa.</p>
+						\		</div>
+							</div>
+						</li>
+						<li data-background="dummy/banner2.jpg">
+							<div class="container">
+								<div class="slide-caption col-md-4">
+									<h2 class="slide-title">YOU CAN FLY</h2>
+									<p>You can fly to any country of your choice</p>	</div>
+							</div>
+						</li>
+						<li data-background="dummy/banner5.jpg">
+							<div class="container">
+								<div class="slide-caption col-md-4">
+									<h2 class="slide-title">HOLIDAY PACKAGES</h2>
+									<p>Where next will you like to spend your holiday?</p>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+					<div class="flexslider-controls">
+						<div class="container">
+							<ol class="flex-control-nav">
+								<li><a>1</a></li>
+								<li><a>2</a></li>
+								<li><a>3</a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="container">
+				<div class="form col-lg-12">
+				<h3>Booking Form</h3>
+					<form id="bookingForm">
+						<div class="fl1">
+							<div class="tmInput">
+								<input name="City" placeHolder="Origin:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+							</div>
+							<div class="tmInput">
+								<input name="City" placeHolder="Destination:" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+						</div>
+						
+						
+						<div class="clear"></div>
+						<strong>Depature</strong>
+						<label class="tmDatepicker">
+							<input type="date" name="Check-in" placeHolder='10/05/2022' data-constraints="@NotEmpty @Required @Date">
+						</label>
+						<div class="clear"></div>
+						<strong>Arrival &nbsp;&nbsp;</strong>
+						<label class="tmDatepicker">
+							<input type="date" name="Check-out" placeHolder='20/05/2022' data-constraints="@NotEmpty @Required @Date">
+						</label>
+						<div class="clear"></div>
+						<div class="tmRadio">
+							<p>Class</p>
+							<input name="Class" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Class", groups=[RadioGroup])' checked/>
+							<span>Economy</span>
+							<input name="Class" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Class", groups=[RadioGroup])' />
+							<span>Business</span>
+							<input name="Class" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Class", groups=[RadioGroup])' />
+							<span>First Class</span>
+						</div>
+						<div class="clear"></div>
+						<div class="fl1 fl2">
+							<em>Adults</em>
+							<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>1</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							
+						<div class="fl1 fl2">
+							<em>Children</em>
+							<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>0</option>
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						
+						<a href="#" class="btn" data-type="search" style="border:blue; border-style:solid;">Search</a>
+					</form>
+				</div>
+				</div>
+				
+				
+
+				<div class="fullwidth-block features-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="feature left-icon wow fadeInLeft" data-wow-delay=".3s">
+									<i class="icon-ticket"></i>
+									<h3 class="feature-title">BOOK</h3>
+									<p>Book your flights and pay in Naira with an option to book on-hold and pay later.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="feature left-icon wow fadeInLeft">
+									<i class="icon-plane"></i>
+									<h3 class="feature-title">SELECT</h3>
+									<p>Flights are scheduled for your comfort   convenience.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="feature left-icon wow fadeInRight">
+									<i class="icon-jetski"></i>
+									<h3 class="feature-title">TOUR</h3>
+									<p>Let help you package tours for your Holiday</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="feature left-icon wow fadeInRight" data-wow-delay=".3s">
+									<i class="icon-shuttelcock"></i>
+									<h3 class="feature-title">SPORT</h3>
+									<p>You can go to watch ball anywhere it's being held</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fullwidth-block offers-section" data-bg-color="#f1f1f1">
+					<div class="container">
+						<h2 class="section-title">The newest holiday offers</h2>
+						<div class="row">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<article class="offer wow bounceIn">
+									<figure class="featured-image"><img src="dummy/holi1.jpg" alt=""></figure>
+									<h2 class="entry-title"><a href="">Visit Cairo</a></h2>
+									<p>Enjoy your holiday with your spouse and family in Cairo</p>
+									<a href="#" class="button">See details</a>
+								</article>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<article class="offer wow bounceIn" data-wow-delay=".2s">
+									<figure class="featured-image"><img src="dummy/holi2.jpg" alt=""></figure>
+									<h2 class="entry-title"><a href="">Dubai</a></h2>
+									<p>Dubai is a nice tourist place to enjoy your short holiday</p>
+									<a href="#" class="button">See details</a>
+								</article>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<article class="offer wow bounceIn" data-wow-delay=".4s">
+									<figure class="featured-image"><img src="dummy/holi3.jpg" alt=""></figure>
+									<h2 class="entry-title"><a href="">Isanlu</a></h2>
+									<p>There is a water dam in Isanlu where you can catch cruise with fishing adventure</p>
+									<a href="#" class="button">See details</a>
+								</article>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<article class="offer wow bounceIn" data-wow-delay=".6s">
+									<figure class="featured-image"><img src="dummy/holi4.jpg" alt=""></figure>
+									<h2 class="entry-title"><a href="">Turkey</a></h2>
+									<p>Fly to Turkey and enjoy in fullness the coming Turkey day.</p>
+									<a href="#" class="button">See details</a>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fullwidth-block testimonial-section">
+					<div class="container">
+						<h2 class="section-title">Testimonials</h2>
+						<div class="row">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="testimonial wow fadeInUp">
+									<figure class="avatar"><img src="dummy/port2.jpg" alt=""></figure>
+									<blockquote class="testimonial-body">
+										<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+										<cite>Jessica Tracy</cite>
+										<span>Creative agency CEO</span>
+									</blockquote>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="testimonial wow fadeInUp" data-wow-delay=".2s">
+									<figure class="avatar"><img src="dummy/port3.jpg" alt=""></figure>
+									<blockquote class="testimonial-body">
+										<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+										<cite>John Smith</cite>
+										<span>Traveler</span>
+									</blockquote>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="testimonial wow fadeInUp" data-wow-delay=".4s">
+									<figure class="avatar"><img src="dummy/port4.jpg" alt=""></figure>
+									<blockquote class="testimonial-body">
+										<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+										<cite>Susan Webb</cite>
+										<span>Hairdresser</span>
+									</blockquote>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="testimonial wow fadeInUp" data-wow-delay=".6s">
+									<figure class="avatar"><img src="dummy/port5.jpg" alt=""></figure>
+									<blockquote class="testimonial-body">
+										<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+										<cite>Sarah Brown</cite>
+										<span>Athlete</span>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main> <!-- .content -->
+
+			<footer class="site-footer wow fadeInUp">
+				<div class="footer-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="widget">
+									<h3 class="widget-title">About us</h3>
+									<p>Fast Chariot Travels is a Nigeria-based privately owned leading tourism brands online with over 15 years of experience in the travel and hospitality domain. The company is driven by the vision to take customers through a journey without boundaries or limitations & to be the world's most recognized and trusted e-com tourism companies on the globe.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget">
+									<h3 class="widget-title">Helpful Links</h3>
+									<ul class="list-arrow">
+										<li><a href="#">Labore et dolore magnam</a></li>
+										<li><a href="#">Dolore magnam</a></li>
+										<li><a href="#">Magnam Labore et</a></li>
+										<li><a href="#">Dolore mabore magnam</a></li>
+										<li><a href="#">Et dolore magnam</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget">
+									<h3 class="widget-title">Helpful Links</h3>
+									<ul class="list-arrow">
+										<li><a href="#">Labore et dolore magnam</a></li>
+										<li><a href="#">Dolore magnam</a></li>
+										<li><a href="#">Magnam Labore et</a></li>
+										<li><a href="#">Dolore mabore magnam</a></li>
+										<li><a href="#">Et dolore magnam</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-customer-info">
+									<h3 class="widget-title">Customer Service</h3>
+									<img src="images/card1.jpg" alt="" class="pull-left">
+									<div class="cs-info">
+										<p>Feel free to call us at anytime for your bookings</p>
+										<p>+234 816 263 4844 <br> <a href="mailto:cs@companyname.com">fastchariottravels@gmail.com.com</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="branding pull-left">
+							<img src="images/fbg1.png" alt="Company Name" class="logo">
+							<h1 class="site-title"><a href="index.html">Fast Chariot Travels</a></h1>
+							<small class="site-description">You Can Fly</small>
+						</div>
+
+						<div class="contact-links pull-right">
+							<a href="https://goo.gl/maps/oQKxg"><i class="fa fa-map-marker"></i>1 Rasaq Onabule Crescent, Gbagada. Lagos</a>
+							<a href="tel:+134453455345"><i class="fa fa-phone"></i> +234 816 263 4844</a>
+							<a href="mailto:contact@companyname.com"><i class="fa fa-envelope"></i> fastchariottravels@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="colophon">
+					<div class="container">
+						<p class="copy">Copyright 2014 Company Name, Designed by Themezy, All right reserved.</p>
+					</div>
+				</div>
+			</footer> <!-- .site-footer -->
+
+		</div> <!-- #site-content -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/min/plugins-min.js"></script>
+		<script src="js/min/app-min.js"></script>
+		
+	</body>
+
+</html>
