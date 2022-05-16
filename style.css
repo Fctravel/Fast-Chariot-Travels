@@ -488,17 +488,159 @@ table {
   color: #19bdce;
 }
 
-.form, .col-lg-12 {
+.form-control {
+	background-color: transparent;
+    border: 1px solid #BEC4C8;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #07253F;
+    display: block;
+    font-size: 15px;
+    height: 35px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 50%;
+}
+
+
+.whatsapp {
+	border: 2px green;
+	background-color: #25D366;
+	padding: 5px;
+	border-radius:15px;
+	color: white;
+}
+	
+.colcall2 {
+	border: ;
+	background-color: ;
+	padding: 5px;
+	border-radius:;
+	color: black;
+	}
+.colcall {
+	position: absolute;
+	right:6%;
+	top: 5%;
+	color: white;
+	
+}
+
+
+.tabhead {
+	
+	 border: ;
+	padding: 2px;
+	background-color:#96769C;
+	
+
+}
+
+.tabhead2 {
+	
+	 border: ;
+	padding: 2px;
+	background-color:;
+	text-align: center;
+
+}
+
+.row {
+	position:bottom;
+	right: 17%;
+	color: black;
+	padding:15px;
+	
+}
+
+
+
+.row1 {
+	positon: absolute;
+	left: 17%;
+	color: black;
+}
+
+.faplane {
+	 border: ;
+	padding: 10	px;
+
+	color: white;
+
+}
+
+
+.faticket {
+	 border: ;
+	padding: 10px;
+
+	color: white;
+
+}
+
+.fabriefcase  {
+	 border: ;
+	padding: 10px;
+
+color: white;
+}
+
+
+.fabullseye {
+	border: ;
+	padding: 10px;
+
+	color: white;
+	
+
+}
+
+
+
+.formt {
+	
+	background-color:#EEEEEE;
+	color:black;
+	width:100%;
+	height: 400px;
+	background-size: cover;
+
+}
+
+
+
+.form, .col-md-8 {
   position: absolute;
-  left: 15px;
+  left: 17%;
   bottom: 0px;
-  background-color: #EEEDE7;
-  padding: 20px;
+  background-color: 
+  padding:10px;
   border-radius: 5px;
-  height: 330px;
+  height: 100%;
+  width:100%;
   top: 0px;
   margin: auto;
+  
+  
 }
+
+.foot1 {
+  position:;
+  bottom:;
+  background-color:; 
+  padding:;
+  border-radius: 5px;
+  height:500px;
+  width:100vh;
+  top: ;
+  background-size: 100% 100%;
+  margin: auto;
+  
+  
+}
+
+
 
 .button {
   padding: 5px 30px;
@@ -2293,6 +2435,7 @@ body {
 .slider .slides li img {
   width: 100%;
   max-width: 100%;
+  background-size: 100% 100%;
 }
 .slider .slides li .container, .slider .slides li .flexslider-controls .flex-control-nav, .slider .flexslider-controls .slides li .flex-control-nav {
   position: absolute;
