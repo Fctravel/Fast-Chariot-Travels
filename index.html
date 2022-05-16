@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="dummy/logo1.png">
 		
+		<script src="https://kit.fontawesome.com/716b6dcc38.js" crossorigin="anonymous"></script>
+		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
@@ -30,7 +32,12 @@
 					<div class="header-content">
 						<div class="branding">
 							<img src="dummy/logo1.png" alt="Company Name" class="logo" style="width: 30%;">
-							<h1 class="site-title"><a href="index.html">Fast Chariot Travels</a></h1>
+							<h4 class="colcall"><span>
+							  <a href="https://wa.me/message/NR55M3DAEYLUD1" class="whatsapp">Whatsapp&nbsp;<i class="fa-brands fa-whatsapp"></i></a>
+							  </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="colcall2">Call<i class="fa-solid fa-phone"></i>&nbsp;+2348162634844</span>
+							</h4>
+							<h1 class="site-title"><a href="index.html">Fast Chariot Travels</a>
+							</h1>
 							<small class="site-description">Flight Booking</small>
 						</div>
 						
@@ -95,66 +102,171 @@
 				</div>
 				
 				
+				<div class="formt">
+				<div class="tabhead">
+				
+					<ul class="nav nav-tabs search-top tabhead2" role="tablist" id="searchTab">
+						
+						
+							<a class="faplane" href="#flight" aria-controls="flight" role="tab" data-toggle="tab">
+								<i class="fa fa-plane"></i> 
+								FLIGHTS
+							</a>
+						
+						
+						
+						
+							<a class="faticket" href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">
+								<i class="fa fa-ticket"></i> 
+								MANAGE BOOKINGS
+							</a>
+						
+					
+					
+							<a class="fabriefcase" href="#online" aria-controls="online" role="tab" data-toggle="tab">
+								<i class="fa fa-briefcase"></i> 
+								ONLINE CHECK-IN
+							</a>
+						
+
+						<!--	<a href="#affinity" aria-controls="affinityaffinity" role="tab" data-toggle="tab">-->
+									<a class="fabullseye" href="https://arikair.crane.aero/web/MemberLogin.xhtml" aria-controls="affinityaffinity" role="tab">
+								<i class="fa fa-bullseye"></i> 
+								AFFINITY WINGS
+							</a>
+										
+		
+							
+					</ul>
+					
+					</div>
 				<div class="container">
-				<div class="form col-lg-12">
-				<h3>Booking Form</h3>
-					<form id="bookingForm">
-						<div class="fl1">
-							<div class="tmInput">
-								<input name="City" placeHolder="Origin:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-							</div>
-							<div class="tmInput">
-								<input name="City" placeHolder="Destination:" type="text" data-constraints="@NotEmpty @Required">
-							</div>
-						</div>
+				
+					
+				<div class="form col-md-8">
+				
+
+					
+					<div class="tab-content">
+							
+							<div role="tabpanel" class="tab-pane active" id="flight">
+							
+
+
+								<div class="col-md-12 product-search-title">Book Flight Tickets</div>
+									<div id="tripTypeArea">
+                           <div class="col-md-12 search-col-padding">
+                            <label for="tripType:1">Round Trip</label>
+                            <input  type="radio" name="trip" id="tripType:1" value="ROUND_TRIP" onclick="flightSearch.selectTripType(this.value)"> 
+                            <label for="tripType:0">One Way</label>
+                            <input  type="radio" name="trip" id="tripType:0" value="ONE_WAY"    onclick="flightSearch.selectTripType(this.value)"> 
+                        </div>
+                    </div>
+
+<div class="clearfix"></div>
+
+                        <div id="depPortArea" class="col-md-6 col-sm-6 search-col-padding">
+                        	<label>Flying From</label>
+										<div class="input-group">
+											            <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <select id="depPort" placeholder="From" class="form-control" onchange="flightSearch.selectDepPort(this.value)">
+							<option value="" disabled selected>Select City</option>
+                              <option>Lagos</option>
+                              <option>Abuja</option>
+                              <option>Dubai</option>
+                            </select>
+                
+										</div>
+                        </div>
+
+                        <div id="arrPortArea" class="col-md-6 col-sm-6 search-col-padding">
+                        	<label>Flying To</label>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <select id="arrPort" class="form-control" placeholder="To" onchange="flightSearch.selectArrPort(this.value)">
+							<option value="" disabled selected>Select City</option>
+							<option>Lagos</option>
+                            <option>Abuja</option>
+                            <option>Dubai</option>
+                            </select>
+                        </div>
+                        </div>    
 						
-						
-						<div class="clear"></div>
-						<strong>Depature</strong>
-						<label class="tmDatepicker">
-							<input type="date" name="Check-in" placeHolder='10/05/2022' data-constraints="@NotEmpty @Required @Date">
-						</label>
-						<div class="clear"></div>
-						<strong>Arrival &nbsp;&nbsp;</strong>
-						<label class="tmDatepicker">
-							<input type="date" name="Check-out" placeHolder='20/05/2022' data-constraints="@NotEmpty @Required @Date">
-						</label>
-						<div class="clear"></div>
-						<div class="tmRadio">
-							<p>Class</p>
-							<input name="Class" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Class", groups=[RadioGroup])' checked/>
-							<span>Economy</span>
-							<input name="Class" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Class", groups=[RadioGroup])' />
-							<span>Business</span>
-							<input name="Class" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Class", groups=[RadioGroup])' />
-							<span>First Class</span>
-						</div>
-						<div class="clear"></div>
-						<div class="fl1 fl2">
-							<em>Adults</em>
-							<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>1</option>
+<div class="clearfix"></div>
+
+                        
+ <div id="departureDateArea" class="col-md-6 col-sm-6 search-col-padding">
+                        	<label>Departure Date</label>
+										<div class="input-group date datepicker">
+											  <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+                            </span>
+                            <input type='date' class="form-control" id="departureDate" format="dd/MM/yyyy" autocomplete="off" onchange="flightSearch.selectDepartureDate(this.value); $('#returnDate').calendarsPicker('option', 'minDate', this.value)">
+                        
+                        </div>
+                        </div>
+
+                        <div id="returnDateArea" class='col-md-6 col-sm-6 search-col-padding'>
+                        	<label>Return Date</label>
+                        	<div class="input-group date datepicker">
+                        		  <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+							
+                            <input type='date' class="form-control" id="returnDate" format="dd/MM/yyyy" autocomplete="off" sonchange="flightSearch.selectReturnDate(this.value); $('#departureDate').calendarsPicker('option', 'maxDate', this.value)">
+
+                          
+                            </div>
+                        </div>
+<div class="clearfix"></div>
+                        <div class="row1">
+                            <div class="col-md-4 col-sm-4 search-col-padding" id="adultArea">
+                            	<label>Adult</label><br>
+                                <select placeholder="Adult" class="form-control" id="adult" >
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
-							</select>
-							
-						<div class="fl1 fl2">
-							<em>Children</em>
-							<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>0</option>
+								<option>4</option>
+								</select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 search-col-padding" id="childArea">
+                            	<label>Child</label><br>
+                                <select placeholder="Child" class="form-control"  id="child">
 								<option>0</option>
 								<option>1</option>
 								<option>2</option>
-							</select>
-						</div>
-						
-						<a href="#" class="btn" data-type="search" style="border:blue; border-style:solid;">Search</a>
-					</form>
+								<option>3</option>
+								</select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 search-col-padding" id="infantArea">
+                            	<label>Infant</label><br>
+                                <select placeholder="Infant" class="form-control"  id="infant">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								</select>
+                            </div>
+                        </div>
+
+				
+
+
+							</div>
+
 				</div>
 				</div>
 				
-				
+					<div class="clearfix"></div>
+<div 	class="row">
+                        <div id="btnSearchArea" class="col-md-10 search-col-padding" align="right">
+                            <input type="submit" class="search-button btn transition-effect" id="btnSearch" value="Flight Search" onclick="flightSearch.search()">
+                        </div>	
+                    </div>
+				</div>
+			
+				</div>
 
 				<div class="fullwidth-block features-section">
 					<div class="container">
@@ -294,11 +406,11 @@
 								<div class="widget">
 									<h3 class="widget-title">Helpful Links</h3>
 									<ul class="list-arrow">
-										<li><a href="#">Labore et dolore magnam</a></li>
-										<li><a href="#">Dolore magnam</a></li>
-										<li><a href="#">Magnam Labore et</a></li>
-										<li><a href="#">Dolore mabore magnam</a></li>
-										<li><a href="#">Et dolore magnam</a></li>
+										<li><a href="#">Flight Booking</a></li>
+										<li><a href="#">Hotel Booking</a></li>
+										<li><a href="#">Visa Assistance</a></li>
+										<li><a href="#">Insurance</a></li>
+										<li><a href="#">Holiday Package</a></li>
 									</ul>
 								</div>
 							</div>
@@ -306,11 +418,11 @@
 								<div class="widget">
 									<h3 class="widget-title">Helpful Links</h3>
 									<ul class="list-arrow">
-										<li><a href="#">Labore et dolore magnam</a></li>
-										<li><a href="#">Dolore magnam</a></li>
-										<li><a href="#">Magnam Labore et</a></li>
-										<li><a href="#">Dolore mabore magnam</a></li>
-										<li><a href="#">Et dolore magnam</a></li>
+									<li><a href="#">Flight Booking</a></li>
+										<li><a href="#">Hotel Booking</a></li>
+										<li><a href="#">Visa Assistance</a></li>
+										<li><a href="#">Insurance</a></li>
+										<li><a href="#">Holiday Package</a></li>
 									</ul>
 								</div>
 							</div>
@@ -327,26 +439,35 @@
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="footer-bottom">
+				
 					<div class="container">
 						<div class="branding pull-left">
-							<img src="images/fbg1.png" alt="Company Name" class="logo">
+							
 							<h1 class="site-title"><a href="index.html">Fast Chariot Travels</a></h1>
 							<small class="site-description">You Can Fly</small>
 						</div>
 
-						<div class="contact-links pull-right">
+						<div class="contact-links pull-right ">
 							<a href="https://goo.gl/maps/oQKxg"><i class="fa fa-map-marker"></i>1 Rasaq Onabule Crescent, Gbagada. Lagos</a>
 							<a href="tel:+134453455345"><i class="fa fa-phone"></i> +234 816 263 4844</a>
 							<a href="mailto:contact@companyname.com"><i class="fa fa-envelope"></i> fastchariottravels@gmail.com</a>
 						</div>
 					</div>
 				</div>
+				</div>
+				<div class="container">
+				<div class="foot1" style="background-image: url(images/fbg1.png);background-repeat:no-repeat;"></div>
+				
 				<div class="colophon">
 					<div class="container">
 						<p class="copy">Copyright 2014 Company Name, Designed by Themezy, All right reserved.</p>
 					</div>
 				</div>
+			</div>	
+			
+			
 			</footer> <!-- .site-footer -->
 
 		</div> <!-- #site-content -->
