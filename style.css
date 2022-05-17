@@ -500,12 +500,21 @@ table {
     line-height: 1.42857;
     padding: 6px 12px;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-    width: 50%;
+    
 }
 
 
 .whatsapp {
-	border: 2px green;
+	border: 2px;
+	background-color: white;
+	padding: 5px;
+	border-radius:15px;
+	color: #25D366;
+	font-weight: bold;
+	
+}
+	
+	.whatsapp:hover {
 	background-color: #25D366;
 	padding: 5px;
 	border-radius:15px;
@@ -518,129 +527,138 @@ table {
 	padding: 5px;
 	border-radius:;
 	color: black;
+	
 	}
-.colcall {
-	position: absolute;
-	right:6%;
-	top: 5%;
-	color: white;
 	
-}
-
-
-.tabhead {
-	
-	 border: ;
-	padding: 2px;
-	background-color:#96769C;
-	
-
-}
-
-.tabhead2 {
-	
-	 border: ;
-	padding: 2px;
-	background-color:;
-	text-align: center;
-
-}
-
-.row {
-	position:bottom;
-	right: 17%;
-	color: black;
-	padding:15px;
-	
-}
-
-
-
-.row1 {
-	positon: absolute;
-	left: 17%;
-	color: black;
-}
-
-.faplane {
-	 border: ;
-	padding: 10	px;
-
-	color: white;
-
-}
-
-
-.faticket {
-	 border: ;
-	padding: 10px;
-
-	color: white;
-
-}
-
-.fabriefcase  {
-	 border: ;
-	padding: 10px;
-
-color: white;
-}
-
-
-.fabullseye {
+	.colcall2:hover {
 	border: ;
-	padding: 10px;
-
+	background-color: blue;
+	padding: 5px;
+	border-radius: 15px;
 	color: white;
 	
-
-}
-
-
-
-.formt {
+	}
 	
-	background-color:#EEEEEE;
-	color:black;
-	width:100%;
-	height: 400px;
-	background-size: cover;
-
+.colcall {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 6px;
+	margin-top:;
+	color: white;
+	
+	
+	
 }
 
 
 
-.form, .col-md-8 {
-  position: absolute;
-  left: 17%;
-  bottom: 0px;
-  background-color: 
-  padding:10px;
-  border-radius: 5px;
-  height: 100%;
-  width:100%;
-  top: 0px;
-  margin: auto;
-  
-  
+.float_left {
+	margin-left: 3%;
+	width:40%;
+	float:left;
+	
+}
+
+.float_left2 {
+	margin-left: 3%;
+	width:40%;
+	float:left;
+	
+}
+
+.float_left3 {
+	margin-left: 3%;
+	width:15%;
+	float:left;
+}
+
+/* Style the submit button */
+input[type=submit] {
+		
+  background-color: #8534A9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 63%;
+}
+
+input[type=submit]:hover {
+		
+  background-color: gray;
+  color: ;
+
+}
+
+input[type=submit]:active {
+		
+  background-color: blue;
+  color: ;
+
+}
+.round_trip {
+	
+	margin-left: 3%;
+	
+}
+
+.form_title {
+	
+	margin-left: 3%;
+	
+}
+
+span[class=nav_booking] {
+	margin-left: 30%;
+	display: flex;
+	flex-direction: row;
+
+	flex-wrap: wrap;
+}
+
+span[class=nav_booking] a:hover {
+	color:white;
+	background-color: #8534A9;
+	
+}
+
+span[class=nav_booking] a {
+
+        display: block;
+		text-decoration: none;
+        padding: 15px 25px;
+        text-align: center;
+        background-color: transparent:
+        color: #464141;
+        margin: 0;
+        font-family: sans-serif;
 }
 
 .foot1 {
-  position:;
+  
   bottom:;
   background-color:; 
-  padding:;
+  padding: 30%;
   border-radius: 5px;
-  height:500px;
-  width:100vh;
   top: ;
-  background-size: 100% 100%;
-  margin: auto;
+  background-size: 80% 90%;
+
   
   
 }
 
+.branding, .pull-left {
+	margin-left: 3%;
+	
+}
 
+.contact-links, .pull-right{
+	margin-right: 3%;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
 
 .button {
   padding: 5px 30px;
@@ -2542,7 +2560,7 @@ figure img {
 }
 .site-footer .footer-bottom {
   background: #e7e7e7;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .site-footer .branding .site-title {
   font-size: 14px;
